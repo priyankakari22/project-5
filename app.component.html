@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="content" style="text-align:center">
+  <h1>
+   Movies</h1>
+ Search&nbsp;&nbsp;<input type="text" [(ngModel)]="Search"> &nbsp;&nbsp;&nbsp;<button (click)="Go()" >Go</button>
+  <table>
+    <tr>
+      <th>title</th>
+      <th>rating</th>
+      <th></th>
+    </tr>
+    <tr>
+      <tr *ngFor="let item of array">
+        <td>{{item.title}}</td>
+        <td>{{item.rating}}</td>
+        <td><img src="https://picsum.photos/id/0/5616/3744"></td>
+        
+    </tr>
+   
+  </table>
+  </div>
+
